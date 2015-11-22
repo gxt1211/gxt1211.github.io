@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shadow</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+body{ background:#ccc; text-align:center;}
+input{ padding:10px 20px; border:1px solid #000; margin-top:20px; border-radius:4px;}
+input:active{ background:#CCCCFF; color:#fff;border-radius:5px;}
+
+#ul1{ width:300px; height:300px; position:absolute; left:50%; top:50%; margin-left:-150px; margin-top:-150px;}
+#ul1 li{ width:100%; height:100%; position:absolute; left:0; top:0;  border:1px solid #ccc; opacity:0; -webkit-box-reflect:below 10px -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.5)); transition:.5s all cubic-bezier(0.79, 2.59, 0.74, 0.25);  transform:perspective(800px) translateX(0px) rotateY(0deg);}
+
+#ul1 li.l2{ opacity:0; transform:perspective(800px) translateX(-280px) rotateY(60deg); z-index:1;}
+#ul1 li.l1{ opacity:0.8; transform:perspective(800px) translateX(-220px) rotateY(60deg); z-index:2;}
+#ul1 li.cur{ opacity:1; z-index:5;}
+#ul1 li.r1{ opacity:0.8;transform:perspective(800px) translateX(220px) rotateY(-60deg); z-index:2;}
+#ul1 li.r2{ opacity:0;transform:perspective(800px) translateX(280px) rotateY(-60deg); z-index:1;}
+img {width:300px; height:300px;}
+</style>
+<script>
+window.onload=function(){
+	var oLeft=document.querySelector('.left');	
+	var oRight=document.querySelector('.right');
+	var aLi=document.querySelectorAll('#ul1 li');
+	
+	//存class
+	var aClass=[];
+	for(var i=0; i<aLi.length; i++){
+		aClass[i]=aLi[i].className;
+	}
+	
+	function tab(){
+		for(var i=0; i<aLi.length; i++){
+			aLi[i].className=aClass[i];
+		}	
+	}
+	
+	//左边
+	oLeft.onclick=function(){
+		aClass.unshift(aClass.pop());	
+		
+		tab();
+	};
+	
+	//右面
+	oRight.onclick=function(){
+		aClass.push(aClass.shift());	
+		
+		tab();
+	};
+};
+</script>
+</head>
+
+<body>
+<input type="button" value="←" class="left">
+<input type="button" value="→" class="right">
+<ul id="ul1">
+	<li class="l2"><img src="1.jpg"></li>
+    <li class="l1"><img src="2.jpg"></li>
+    <li class="cur"><img src="3.jpg"></li>
+    <li class="r1"><img src="4.jpg"></li>
+    <li class="r2"><img src="5.jpg"></li>
+</ul>
+</body>
+</html>

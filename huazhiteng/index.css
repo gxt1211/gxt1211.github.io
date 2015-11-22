@@ -1,0 +1,59 @@
+html{font-size:20px;}
+*{margin:0;padding:0; list-style:none;}
+
+
+.box{margin:0 auto; background-color: #f2f4f8; overflow:hidden;}
+header{width:100%; height:2.2rem; background-color:#ffd144; overflow:hidden; }
+header .logo{ width:1.625rem; height:1.575rem;background:url(images/1.png) no-repeat; float:left; margin-left:1.425rem;margin-top:0.35rem;background-size:100%;}
+header h1{margin-left:4.75rem; margin-top:0.8rem;background:url(images/30.png) no-repeat; width:7.125rem; height:0.775rem; background-size:100%;text-indent:-999em; }
+header .menu{width:1.1rem; height:0.875rem; background:url(images/2.png) no-repeat; float:right;margin-right:0.75rem;background-size:100%; margin-top:-0.9rem;}
+
+
+.swiper-container{ width:100%;}
+.swiper-slide img{ width:100%; height:10.075rem;}
+
+section nav{width:13.15rem;margin:0 auto;margin-top:0.55rem;}
+section nav .nav{position:relative; background:url(images/25.png) no-repeat; width:13.15rem; height:2.325rem; background-size:100%;}
+section nav .about{background:url(images/24.png) no-repeat; width:12.325rem; height:0.375rem;background-size:100%; margin-left:0.4rem; margin-top:0.25rem;}
+section nav .nav>div{position:absolute;background-size:100%; }
+
+section nav .product{width:0.925rem; height:1.4rem;background:#a123ff url(images/10.png) no-repeat; left:3.4rem;top:0.5rem;}
+section nav .firm{background:#ff21bd url(images/8.png) no-repeat; width:1.05rem; height:1.275rem; left:6rem; top:0.5rem; }
+section nav .league{background:#fc2255 url(images/6.png) no-repeat; width:1.4rem;height:1.075rem; left:8.6rem;top:0.7rem;}
+section nav .relation{background:#fc8622 url(images/7.png) no-repeat; width:1.125rem;height:1.15rem; left:11.52rem; top:0.5rem;}
+section nav .our{background:#4a10ff url(images/11.png) no-repeat;width:1.2rem; height:0.95rem; left:0.45rem; top:0.7rem;}
+
+section .shade{width:100%; height:1.05rem; background:url(images/32.png) no-repeat ;background-size:100%;margin-top:0.55rem;}
+section .shadow{width:13.15rem; margin:0 auto; padding-top:0.2rem;}
+section .shadow1{width:5.875rem;height:0.6rem; background-color:#fff;position:relative; background-size:100%;}
+section .shadow1 .ico{position:absolute;width:0.2rem;height:0.3rem; background:url(images/14.png) no-repeat;background-size:100%;left:0.25rem; top:0.125rem;}
+section .shadow1 .text{position:absolute;width:1.825rem; height:0.45rem; background:url(images/26.png) no-repeat; background-size:100%; left:0.875rem; top:0.07rem;}
+section .shadow1 .ico1{position:absolute; width:0.25rem; height:0.4rem; background:url(images/21.png) no-repeat; background-size:100%; right:0.15rem; top:0.1rem;}
+
+section .type{overflow:hidden; margin-bottom:0.55rem;width:13.15rem; margin:0 auto;}
+section .type img{width:5.825rem; height:3.6rem; margin-top:0.55rem;float:left;}
+section .type .text{ margin-top:0.55rem; margin-left:0.4rem;float:left; width:6.875rem; height:3.6rem; background:url(images/29.png) no-repeat; background-size:100%;}
+
+section .shadow1 .text1{position:absolute;width:1.825rem; height:0.45rem; background:url(images/27.png) no-repeat; background-size:100%; left:0.875rem; top:0.07rem;}
+section .shadow1 .text2{position:absolute;width:1.825rem; height:0.45rem; background:url(images/28.png) no-repeat; background-size:100%; left:0.875rem; top:0.07rem;}
+
+section .console{ width:13.15rem; display:-webkit-box;margin:0 auto;}
+section .console div{ margin-bottom:0.625rem; position:relative;margin-right:1rem;-webkit-box-flew:1; background:url(images/13.png) no-repeat;width:3.375rem;height:2.35rem; background-size:100%; margin-left:0.45rem;margin-top:0.7rem;}
+section .console span{display:block;width:0.725rem; height:0.375rem; background:url(images/34.png) no-repeat; background-size:100%; position:absolute;top:2.55rem; left:1.3rem;}
+
+section .com{width:13.15rem; margin:0 auto; display:-webkit-box; margin-bottom:0.6rem; }
+section .com div{-webkit-box-flew:1; margin-top:0.6rem; }
+section .com img{width:6.45rem;}
+section .com img:nth-child(1){margin-right:0.45rem;}
+
+footer{width:100%;background:url(images/35.png) no-repeat ; height:2.15rem;overflow:hidden;background-size:100%;}
+footer ul{width:13.15rem;margin:0 auto; overflow:hidden; margin-bottom:0.2rem;}
+footer li{float:left; margin-top:0.5rem;} 
+footer .first{background:url(images/19.png) no-repeat center;width:0.625rem; height:0.5rem; background-size:100%;margin-left:1.5rem;}
+footer .phone{background:url(images/20.png) no-repeat center;width:0.4rem; height:0.6rem; background-size:100%;margin-left:2.4rem;}
+footer .add{background:url(images/17.png) no-repeat center;width:0.4rem; height:0.525rem; background-size:100%;margin-left:3.05rem;}
+footer .return{background:url(images/18.png) no-repeat center;width:0.5rem; height:0.55rem; background-size:100%; margin-left:2.7rem;}
+footer .home{margin:0 auto;background:url(images/9.png) no-repeat; width:10.175rem; height:0.35rem; background-size:100%;}
+
+
+

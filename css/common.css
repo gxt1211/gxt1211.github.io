@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*清除默认样式*/
+
+html body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,ul,dl,dt,dd,a,i,b,em,strong,img,input{ margin:0; padding:0;}
+b,strong{ font-weight:normal;}
+i,em{ font-style:normal}
+a{ text-decoration:none;}
+li{ list-style:none;}
+.clearFix:after{ content:''; clear:both; display:block; }
+.clearFix{ zoom:1; }
+input{ border:none; background:none; }
+tetxarea{ outline:none;resize:none;}
+body{ font-size:12px; color:#333; font-family:"\5FAE\8F6F\96C5\9ED1" , "\5B8B\4F53"; overflow:auto; }
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+img, input, select{ vertical-align:top; outline:none; }
+img{ display:block; border:none;}
+
+/*公用样式*/
+
+.wrap{ width:1200px; margin:0 auto; }
+

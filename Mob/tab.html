@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>移动端无缝轮播图</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+<style>
+*{ margin:0; padding:0; list-style:none;}
+html{ font-size:20px;}
+#box{ width:16rem; height:7.5rem; overflow:hidden;}
+#box ul{ width:96rem; -webkit-transform:translate3d(-16rem,0,0);}
+#box ul li{ width:16rem; float:left; height:7.5rem; }
+</style>
+<script>
+;(function(win,doc){
+	function change(){
+		document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';	
+	}
+	
+	doc.addEventListener('DOMContentLoaded',change,false);	
+	win.addEventListener('resize',change,false);
+})(window,document);
+
+document.addEventListener('DOMContentLoaded',function(){
+	var oBox=document.querySelector('#box');
+	var oUl=document.querySelector('#box ul');
+	var aLi=oUl.children;
+	
+	var iNow=1;
+	var x=-iNow*aLi[0].offsetWidth;
+	
+	var bReady=true;
+	oBox.addEventListener('touchstart',function(ev){
+		if(bReady==false)return;
+		bReady=false;
+		oUl.style.WebkitTransition='none';
+		var downX=ev.targetTouches[0].pageX;
+		var disX=downX-x;
+		
+		function fnMove(ev){
+			x=ev.targetTouches[0].pageX-disX;
+			
+			oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+			
+			ev.preventDefault();
+		}
+		
+		function fnEnd(ev){
+			oBox.removeEventListener('touchmove',fnMove,false);
+			oBox.removeEventListener('touchend',fnEnd,false);
+			
+			var upX=ev.changedTouches[0].pageX;
+			if(Math.abs(upX-downX)>50){
+				if(downX>upX){
+					//往左拖
+					iNow++;
+					if(iNow>=aLi.length)iNow=aLi.length-1;
+				}else{
+					iNow--;
+					if(iNow<=0)iNow=0;
+				}
+					
+			}
+			x=-iNow*aLi[0].offsetWidth;
+			oUl.style.WebkitTransition='.4s all ease';
+			oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+			function tEnd(){
+				bReady=true;
+				oUl.removeEventListener('transitionend',tEnd,false);
+				if(iNow==aLi.length-1){
+					iNow=1;
+					x=-iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransition='none';
+					oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}
+				if(iNow==0){
+					iNow=aLi.length-2;
+					x=-iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransition='none';
+					oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';	
+				}	
+			}
+			oUl.addEventListener('transitionend',tEnd,false);
+		}
+		
+		oBox.addEventListener('touchmove',fnMove,false);
+		oBox.addEventListener('touchend',fnEnd,false);
+	},false);
+},false);
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul id="ul1">
+    	<li style="background:url(5.jpg) no-repeat;background-size:100%;"></li>
+    
+        <li style="background:url(1.jpg) no-repeat;background-size:100%;"></li>
+        <li style="background:url(2.jpg) no-repeat;background-size:100%;"></li>
+        <li style="background:url(3.jpg) no-repeat;background-size:100%;"></li>
+        <li style="background:url(4.jpg) no-repeat;background-size:100%;"></li>
+        <li style="background:url(5.jpg) no-repeat;background-size:100%;"></li>
+        
+        <li style="background:url(1.jpg) no-repeat;background-size:100%;"></li>
+    </ul>
+</div>
+</body>
+</html>

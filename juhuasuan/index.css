@@ -1,0 +1,78 @@
+*{margin:0; padding:0; list-style:none;}
+html{font-size:20px;};
+.box{width:16rem;}
+.box header{height:2.5rem;width:16rem; margin:0 auto;}
+.box header .return{ float:left;background:url(images/1.png) no-repeat; width:3rem; height:1.5rem; background-size:100%; margin-left:0.5rem; margin-top:0.5rem;text-indent:-999em;}
+.box header p{float:left; background:url(images/4.png) no-repeat; width:3.75rem; height:1rem; background-size:100%; display:block; margin-left:2.5rem; margin-top:0.8rem;text-indent:-999em; }
+
+.swiper-container{ width:100%;}
+.swiper-slide img{ width:100%;}
+
+.box nav{width:14rem;overflow:hidden; margin:0 auto; margin-top:1.5rem;}
+.box nav>div{float:left;width:2rem; height:2rem; border-radius:50%;;margin-right:1.7rem; position:relative;margin-bottom:1.85rem;}
+.box nav .com{background:#ff3900 url(images/21.png) no-repeat center;background-size:50%;}
+.box nav .life{background:#8bca11 url(images/5.png) no-repeat center;background-size:50%;;}
+.box nav .logo{background:#000 url(images/3.png) no-repeat center;background-size:50%;;}
+.box nav .cornucopia{background:#cfa871 url(images/6.png) no-repeat center;background-size:50%;;margin-right:0;}
+.box nav .amorron{background:#ffb021 url(images/20.png) no-repeat center;background-size:50%;;}
+.box nav .poly{background:#ff529d url(images/9.png) no-repeat center;background-size:50%;;}
+.box nav .through{background:#2dc814 url(images/7.png) no-repeat center;background-size:50%;;}
+.box nav .client{background:#f5493c url(images/8.png) no-repeat center;background-size:50%;;margin-right:0;}
+.box nav span{position:absolute;height:1.725rem;left:0.4rem;top:2.3rem;}
+.box nav .com1{background:url(images/23.png) no-repeat;background-size:100%; width:1.15rem;}
+.box nav .life1{background:url(images/22.png) no-repeat;background-size:100%;width:1.15rem;}
+.box nav .logo1{background:url(images/24.png) no-repeat;background-size:100%;width:1.15rem;}
+.box nav .cornucopia1{background:url(images/25.png) no-repeat;background-size:100%;width:1.775rem;left:0.2rem;}
+.box nav .amorron1{background:url(images/26.png) no-repeat;background-size:100%;width:1.775rem;left:0.2rem;}
+.box nav .poly1{background:url(images/27.png) no-repeat;background-size:100%;width:1.775rem;left:0.2rem;}
+.box nav .through1{background:url(images/28.png) no-repeat;background-size:100%;width:1.15rem;}
+.box nav .client1{background:url(images/29.png) no-repeat;background-size:100%;width:1.775rem;left:0.2rem;}
+
+
+	
+.box section .hot{width:15rem; border-bottom:2.5px solid #dcdcdc;overflow:hidden;margin:0 auto;}
+.box section .hot .mlk{padding-bottom:0.5rem;float:left;width:4.9rem; height:0.675rem; background:url(images/31.png) no-repeat; background-size:100%;}
+.box section .hot .ten{float:right;width:1.55rem; height:0.6rem;background:url(images/30.png) no-repeat; background-size:100%;}
+
+
+.box section ol {width:15rem; margin:0 auto; margin-top:0.75rem;}
+.box section ol li{width:100%; margin-bottom:0.3rem;font-family : 微软雅黑; color:#fff; font-size:0.5rem; overflow:hidden; }
+.box section ol li .num{width:1.5rem; height:3rem; background:red; text-align:center; line-height:3rem; display: block; float:left;}
+.box section ol li img{ width:4.5rem; float:left;}
+.box section ol li .gray{width:9rem; height:3rem; float:left; color:#999;background:#f4f4f4; position:relative; }
+section ol li .gray div:nth-child(1){position:absolute;left:0.5rem; top:0.65rem;width:3.625rem; height:1.5rem;background:url(images/33.png) no-repeat; background-size:100%;}
+section ol li .gray div:nth-child(2){width:0.325rem; height:0.55rem;background:url(images/2.png) no-repeat; background-size:100%;left:8.1rem;top:1.05rem; position:absolute;}
+section ol li .one{width:1.55rem; height:0.725rem;background:url(images/51.png) no-repeat; background-size:100%;position:absolute;left:6.2rem;top:0.9rem;}
+section ol li .two{width:2.05rem; height:0.65rem;background:url(images/52.png) no-repeat; background-size:100%;position:absolute;left:5.7rem;top:0.98rem;}
+section ol li .three{width:1.575rem; height:0.65rem;background:url(images/53.png) no-repeat; background-size:100%;position:absolute;left:6.2rem;top:0.95rem;}
+section ol li .four{width:2.125rem; height:0.7rem;background:url(images/54.png) no-repeat; background-size:100%;position:absolute;left:5.7rem;top:0.9rem;}
+section ol li .five{width:2.1rem; height:0.75rem;background:url(images/55.png) no-repeat; background-size:100%;position:absolute;left:5.7rem;top:0.9rem;}
+section ol li .six{width:2.575rem; height:0.725rem;background:url(images/56.png) no-repeat; background-size:100%;position:absolute;left:5.15rem;top:0.9rem;}
+section ol li .seven{width:2.05rem; height:0.725rem;background:url(images/57.png) no-repeat; background-size:100%;position:absolute;left:5.7rem;top:0.9rem;}
+section ol li .eight{width:1.2rem; height:0.725rem;background:url(images/58.png) no-repeat; background-size:100%;position:absolute;left:6.65rem;top:0.9rem;}
+.more{width:15rem; height:2rem; background-color:#f5f5f5;margin:0 auto;margin-top:0.5rem; position:relative;}
+.more div{background:url(images/37.png) no-repeat; background-size:100%; width:5.5rem; height:0.675rem; left:4.75rem; top:0.7rem;position:absolute;}
+
+.money{width:15rem; margin:0 auto; margin-top:0.45rem;}
+.money div:nth-child(1){width:15rem; height:11.55rem; background:url(images/38.png) no-repeat; background-size:100%;}
+.money div:nth-child(2){width:15rem; height:11.55rem; background:url(images/39.png) no-repeat; background-size:100%;}
+.money div:nth-child(3){width:15rem; height:11.55rem; background:url(images/40.png) no-repeat; background-size:100%;}
+	
+.ios{width:15rem; height:4rem; margin:0 auto; display:-webkit-box; margin-top:1rem;}
+.ios div{-webkit-box-flew:1; width:5rem; height:4rem;}
+.ios div:nth-child(1){background:#38a4f1 url(images/48.png) no-repeat 1.8rem 0.8rem ; background-size:30%;}
+.ios div:nth-child(2){background:#8bca11 url(images/49.png) no-repeat 1.8rem 0.8rem; background-size:30%;}
+.ios div:nth-child(3){background:#ff7404 url(images/50.png) no-repeat 1.7rem 0.8rem; background-size:30%;}
+.ios div:nth-child(1) span{display:block;width:2.85rem; height:0.575rem; background:url(images/41.png) no-repeat; background-size:100%;}
+.ios div:nth-child(2) span{display:block;width:3rem; height:0.575rem; background:url(images/42.png) no-repeat; background-size:100%;}
+.ios div:nth-child(3) span{display:block;width:2.4rem; height:0.575rem; background:url(images/43.png) no-repeat; background-size:100%;}
+.ios div span{margin-top:2.8rem; margin-left:1.05rem;}
+
+.logn{width:16rem; height:2.15rem; background:#f8f8f8;margin-top:0.4rem;position:relative;}
+.logn .logn1{background:url(images/47.png) no-repeat; width:3.95rem;height:0.675rem; background-size:100%;left:0.75rem;top:0.7rem;position:absolute;}
+.logn .gohome{background:url(images/44.png) no-repeat; width:1.55rem;height:0.6rem;background-size:100%;left:12.8rem;top:0.75rem;position:absolute;}
+.logn .gohome1{background:url(images/59.png) no-repeat; width:0.4rem;height:0.275rem;background-size:100%;left:14.85rem;top:0.88rem;position:absolute;}
+
+footer{width:16rem; height:4.4rem; background:#eeeeee;position:relative;}
+footer .time{ width:8.85rem; height:0.55rem; background:url(images/46.png) no-repeat; background-size:100%;position:absolute;top:2.4rem;left:3.65rem;}
+footer .pc{width:4.775rem; height:0.675rem; background:url(images/45.png) no-repeat; background-size:100%;position:absolute;left:5.6rem; top:1rem;}

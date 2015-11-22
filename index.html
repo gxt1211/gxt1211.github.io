@@ -1,102 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>个人作品</title>
-	<link href="css/index.css" rel="stylesheet"/>
-	<link href="css/base.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>个人主页</title>
+<link href="css/common.css" rel="stylesheet"/>
+<link href="css/index.css" rel="stylesheet"/>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+<script src="js/move.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/jquery-1.7.2.js"></script>
+
 </head>
+<style>
+    #page, #works, .art ,#me{background: url(1.png) no-repeat; overflow:hidden;}
+    .list li{width:60px; height:30px; background:url(img/bg.png) left top repeat-x; line-height:30px; text-align:center; font-size:12px;}
+    .list .active{background:url(img/bg2.png) left top repeat-x; color:#FFF;}
+</style>
 <body>
-	<div class="webbox">
-		<div class="pag_btn clearfix" id="pag_btn" >
-			<a href="javascript:;">首</a>
-			<a href="javascript:;">作品</a>
-			<a href="javascript:;">技能</a>
-			<a href="javascript:;">关于</a>
-		</div>
-		<ul class="web" id="web">
-			<li id="page">
-				<div class="present">
-					<ul>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿美团</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿小米</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿360导航</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿天猫商城</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿京东商城</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿爱奇艺</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿优酷</span>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<img src="" alt="">
-								<div>
-									<i></i>
-									<span>仿美团</span>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
+<div id="web_box">
+	<div class="page_btn" id="page_btn">
+    	<a href="javascript:;" id="p1" class="f40">首页</a>
+        <a href="javascript:;" id="p2">Js</a>
+        <a href="javascript:;" id="p3">Html5</a>
+        <a href="javascript:;" id="p4">关于</a>
+    </div>
+    
+    <ul id="web" class="web">
+        <li class="art">
+            <div class="snow-container"></div> 
+              <div class="wel" id="wel"></div>
+        </li>
+
+        <li id="works">
+        	<div id="exhi" class="exhibition">
+            	<h2>JavaScript</h2>
+            </div>
+            <div class="tab1">
+                <ul id="tab_box" class="tab_box clearFix">
+
+                    <li id="tab_box_1">
+                    <h5 class="sst">选项卡</h5>
+                    	<div class="play" id="play">
+                        <ol>
+                            <li class="change">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ol>
+                        <ul>
+                            <li><a href="javascript:;"><img src="images/1.jpg" alt="广告一" /></a></li>
+                            <li><a href="javascript:;"><img src="images/2.jpg" alt="广告二" /></a></li>
+                            <li><a href="javascript:;"><img src="images/3.jpg" alt="广告三" /></a></li>
+                            <li><a href="javascript:;"><img src="images/4.jpg" alt="广告四" /></a></li>
+                            <li><a href="javascript:;"><img src="images/5.jpg" alt="广告五" /></a></li>
+                        </ul>
+                </div>
+            </li>
+                    <li>
+                        <h5 class="seamless">无缝滚动</h5>
+                         <div id="box">
+                            <ul class="move">
+                                <li><img src="img/1.png"></li>
+                                <li><img src="img/2.png"></li>
+                                <li><img src="img/3.png"></li>
+                                <li><img src="img/4.png"></li>
+                                <li><img src="img/6.png"></li>
+                                <li><img src="img/1.png"></li>
+                                <li><img src="img/2.png"></li>
+                                <li><img src="img/3.png"></li>
+                                <li><img src="img/4.png"></li>
+                                <li><img src="img/6.png"></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                    	<h5 class="sfq_tit">手风琴</h5>
+                        <ul id="sfq">
+                           <li>
+                               <span style="background:#f69">一</span>
+                               <img src="images/sfq/0.jpg" alt=""/>
+                           </li>
+                           <li>
+                                <span style="background:#f96">二</span>
+                                <img src="images/sfq/1.jpg" alt=""/>
+                            </li>
+                           <li>
+                                <span style="background:#10D84D">三</span>
+                                <img src="images/sfq/2.jpg" alt=""/>
+                            </li>
+                           <li>
+                                <span style="background:purple">四</span>
+                                <img src="images/sfq/3.jpg" alt=""/>
+                            </li>
+                           <li>
+                                <span style="background:#FF0">五</span>
+                                <img src="images/sfq/4.jpg" alt=""/>
+                            </li>
+                           <li>
+                                <span style="background:#93BF55">六</span>
+                                <img src="images/sfq/5.jpg" alt=""/>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="clearFix">
+                        <div class="carousel fl">
+                        	<div class="lb_wrap clearFix">
+                        		<div class="clock fl" id="clock" >
+                                    <h5 class="time1">模拟时钟</h5>
+                                    <canvas id="sample" width="200px" height="200px" ></canvas>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="tar fl" id="tar">
+                        	<h4>五彩球玩法介绍:</h4>
+                            <p>尝试鼠标长按棕色区域</p>
+                        </div>
+                    </li>
+            
+                </ul>
+                <div class="cut">
+                   <span class="prev" id="prev"></span>
+                   <span class="next" id="next"></span>		
+                </div>
+                <div class="tab_btn clearFix" id="tab_btn">
+                	<span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>	
+            </div>
+        </li>
+
+        <li id="page">
+                <div class="chr"><span>以下CSS3效果建议Chrome下观看</span></div>
+            <div class="present">
+                <ul class="pre_box clearFix" id="pre_box">
+                    <li>
+                        <a href="huazhiteng/index.html">
+                           <img src="images/present/1.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>移动端页面-华之腾</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="juhuasuan/index.html">
+                            <img src="images/present/2.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>移动端页面-模拟聚划算<span>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="Mob/tab.html">
+                            <img src="images/present/3.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>移动端无缝轮播图</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="Baidu/Baidu.html">
+                            <img src="images/present/4.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>模拟百度下拉</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Shadow/Shadow.html">
+                            <img src="images/present/5.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>阴影选项卡</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="tab/boom.html">
+                            <img src="images/present/6.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>Boom选项卡</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="rev/rev.html">
+                            <img src="images/present/7.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>翻转选项卡</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                      <a href="Fish/Fish.html">
+                            <img src="images/present/8.png" alt=""/>
+                            <div>
+                                <i class="pre_bg"></i>
+                                <span>模拟捕鱼达人</span>
+                            </div>
+                        </a>
+                    </li>
+                   
+                 </ul>
+            </div>
+            
+          </li>
+        <li id="me">
+        	<div class="foot">
+                <div class="maxim"><span>Genius is 1% inspiration and 99% perspiration</span></div>
+                <p>姓名：宫小童</p>
+                <p>Mobile: 18500292098
+                <p>QQ: 375070832</p>
+                <p>WeChat: 13614538298</p>
+                <p>E-mail: gxt1211@163.com</p>
+                <a href="javascript:;" class="resume">请点击this查看我的在线简历,也可直接下载</a>
+                <div class="clearFix ds">
+                	<div id="res" class="fl">
+                        <a href="resume.html" class="resume_btn">this</a>
+                        <span id="res_ball"></span>
+                	</div>
+                	<a href="qizhenzhen-resume.doc" class="download fl" id="download">下载</a>
+                </div>
+            </div>
+            
+        </li>
+    </ul>
+</div>
+
+<!--向下滑动-->
+    <div class="sk-double-bounce">
+      <div class="sk-child sk-double-bounce1" id="down1">向下</div>
+      <div class="sk-child sk-double-bounce2" id="down2">划一划吧</div>
+    </div>
+
 </body>
+
 </html>
