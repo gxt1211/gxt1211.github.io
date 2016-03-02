@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>上天入地，308S同你一嗨到底</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/share.js" type="text/javascript"></script>
+  <script src="js/iscroll.js"></script>  
+ <style>
+/*滚动条样式*/
+		#wrapper {
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+			z-index:14;
+			top:34.7%;
+			bottom:31%;
+		}
+		#wrapper img{width:100%;}
+		
+	
+		
+		#scroller {
+			position: absolute;
+			z-index: 1;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			width: 100%;
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			-o-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-text-size-adjust: none;
+			-moz-text-size-adjust: none;
+			-ms-text-size-adjust: none;
+			-o-text-size-adjust: none;
+			text-size-adjust: none;
+		}
+
+		
+
+        .iScrollIndicator{
+           right: -0.1em;
+		   background:#fff!important;
+        }
+		body{background:#000}
+
+ </style> 
+</head>
+
+<body onload="zscroll()">
+	<div class="audio"><audio id="audio" src="music.mp3" autoplay="autoplay" loop></audio></div>
+<div class="Load1 m_porA bg1">
+        <div class="loadImg">
+        	<div class="hai m_porA"><img src="images/hai.png"></div>
+        	<div class="load-car m_porA">
+            	<img src="images/load-car.png" width="100%">
+                <img class="chelun m_porA" src="images/chelun.png" width="12%" style="bottom:2.5px;left:23px;">
+                <img class="chelun m_porA" src="images/chelun.png" width="12%" style="bottom:2.5px;right:17.5px;">
+            </div>
+        	<div id="counter" class="m_porA"></div>
+         </div>   
+  
+</div>
+
+<div class="main" style="display:none">
+    <div class="wrap">
+        <div class="page page1 anim">
+            <div class="blue blue1 m_porA opa0"></div>
+            <div class="green green1 m_porA opa0"></div>
+            <div class="title1 m_porA opa0"></div>
+            <div class="home-title m_porA opa0"></div>
+            <div class="blue blue2 m_porA opa0" ></div>
+            <div class="green green2 m_porA opa0"></div>
+            <div class="title2 m_porA opa0"></div>
+            <div class="c308s m_porA opa0"></div>
+        </div>
+        <div class="page page2">
+        	<div class="cheding m_porA"></div>
+        	<div class="page-con">
+                <div class="text text1 m_porA "></div>
+                <div class="text text2 m_porA "></div>
+                <div class="star1 left50  m_porA donghua1 "></div>
+                <div class="star2  m_porA donghua2 "></div>
+                <div class="star3  m_porA donghua3 "></div>
+                <div class="star4 left50 m_porA donghua4 "></div>
+                <div class="scaleDiv heart1Div m_porA">
+                	<div class="heart1  active1"></div>
+                </div> 
+                <div class="scaleDiv heart2Div m_porA">   
+                	<div class="heart2 active2"></div>
+                </div> 
+                <div class="scaleDiv heart3Div m_porA">    
+                	<div class="heart3  active3"></div>
+                </div>    
+                <div class="heart4 left50 m_porA active4"></div>
+                <div class="smile m_porA active5"></div>
+            </div>   
+            <div class="car car1 m_porA"></div>
+        </div>
+        <div class="page page3">
+        	<div class="cheding m_porA"></div>
+            <div class="page-con">
+            	<div class="water m_porA donghua1"></div>
+            	<div class="text text1 m_porA"></div>
+                <div class="text text2 m_porA"></div>
+            	<div class="fish fish1 m_porA "></div>
+                <div class="fish fish2 m_porA "></div>
+                <div class="fish fish3 m_porA "></div>
+                <div class="fish fish4 m_porA "></div>
+                <div class="scaleDiv yinfuDiv m_porA">
+                	<div class="yinfu  active3"></div>
+                </div>    
+            </div>
+        	<div class="car car2 m_porA"></div>
+        </div>
+        <div class="page page4">
+       		<div class="cheding m_porA"></div>
+            <div class="page-con" >
+            	<div class="text text1 m_porA"></div>
+                <div class="text text2 m_porA"></div>
+                <div class="donghua1 m_porA voiceBoxDiv"><div class="voiceBox m_porA "></div></div>
+                <div class="scaleDiv lightDiv m_porA">
+                	 <div class="lightning  active1"></div>
+                </div>     
+            </div>
+        	<div class="car car3 m_porA"></div>
+        </div>
+        <div class="page page5">
+        	<div class="cheding m_porA"></div>
+            <div class="page-con" >
+            	<div class="roadSign m_porA donghua6"></div> 
+            	<div class="wall m_porA donghua1"></div>
+            	<div class="text text1 m_porA"></div>
+                <div class="text text2 m_porA"></div>
+                <div class="man m_porA donghua5"></div>
+                <div class="scaleDiv tuyaDiv m_porA">
+                	<div class="page5-tuya active3"></div>
+                </div>    
+            </div>
+        	<div class="car car4 m_porA"></div>
+        </div>
+        <div class="page page6" >
+        	<!--<div class="detail m_porA"></div>-->
+        	<div class="cheding m_porA"></div>
+            <div class="page-con">
+            	<div class="formDiv">
+                	<div class="page6-title m_porA"></div>
+                    <div class="form-title m_porA form1"></div>
+                	<form>
+                    	<div class="inpDiv inpDiv1 m_porA form2"><input type="text" id="name" class="inp inp1"></div>
+                        <div class="inpDiv inpDiv2 m_porA form3"><input type="text" id="mobile" class="inp inp2"></div>
+                        <div class="inpDiv inpDiv3 m_porA form4"><input type="text" id="address" class="inp inp3"></div>
+                        <div class="inpDiv inpDiv4 tishi m_porA form5"></div>
+                        <div class="submitDiv m_porA form6"><input class="btn-submit" id="submit" type="button" value=""></div>
+                        <div class="detailDiv m_porA form6"><input class="btn-detail" id="detail" type="button" value=""></div>
+                    </form>
+                </div>
+                <div class="QR-Div m_dn">
+                	<div class="QR-title m_porA form7 "></div>
+                    <div class="QR-code m_porA form8"><img src="images/QR-code.png"></div>
+                    <div class="yuyueDiv m_porA form9"><a href="MLinks.aspx"><input class="btn-yuyue" type="button"></a></div>
+                    <div class="shareDiv m_porA form9"><input class="btn-share" id="share" type="button"></div>
+                </div>
+            </div>
+        	<div class="car car5 m_porA"></div>
+        </div>
+    
+	</div>
+	<div class="Pop-share m_dn">
+    		<div class="shareImg"></div>
+            <div class="car car6 m_porA"></div>
+    </div>
+    <div class="Pop-detail m_dn" >
+    		<div class="detailImg"></div>
+            <div class="car car6 m_porA"></div>
+            <div class="backDiv m_porA"><input class="btn-back" id="back" type="button"></div>
+    </div>
+    <div class="arrow left50"></div>  
+    
+     
+</div>
+
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content"><i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+</div>
+</div>  
+
+<div id="wrapper" style="z-index:-1;opacity:0">
+            <div id="scroller">
+                   <img src="images/pop-text.png">
+             </div>
+              
+</div>
+</body>
+
+<script>
+//iscroll
+var myScroll;
+
+function zscroll() {
+	myScroll = new IScroll('#wrapper', {
+			scrollbars: true,
+			mouseWheel: true,
+			interactiveScrollbars: true,
+			shrinkScrollbars: 'scale',
+			fadeScrollbars: true
+		});
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+</html>
